@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".HistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/history_iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/it_back"
+            android:onClick="onClick"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/history"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/history_iv_calendar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/it_rili"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/history_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年11月"
+            android:textColor="@color/purple_500"/>
+
+        <TextView
+            android:id="@+id/history_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/purple_500"
+            android:text="@string/history_info"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/history_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:divider="@color/grey_7D7D7D"
+        android:dividerHeight="3dp"/>
+
+</LinearLayout>

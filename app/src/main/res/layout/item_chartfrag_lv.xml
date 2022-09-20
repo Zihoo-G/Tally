@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_chartfrag_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/ic_daily_selected"></ImageView>
+
+    <TextView
+        android:id="@+id/item_chartfrag_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="烟酒"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/item_chartfrag_iv"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/item_chartfrag_tv_pert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="23.3%"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_chartfrag_tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="1623.0"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dialog_budget_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_budget"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/dialog_budget_iv_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ih_error"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/dialog_budget_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:textSize="20sp"
+        android:layout_below="@id/dialog_budget_tv1"
+        android:textStyle="bold"
+        android:textColor="@color/grey_7D7D7D"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/dialog_budget_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dialog_budget_tv2"
+        android:layout_alignBaseline="@id/dialog_budget_tv2"
+        android:hint="请输入预算金额"
+        android:inputType="numberDecimal"
+        android:background="@color/white">
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:id="@+id/dialog_budget_btn_ensure"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_budget_et"
+        android:background="@drawable/dialog_btn_bg"
+        android:text="@string/ensure"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
